@@ -1,0 +1,4 @@
+testset ! C, Dataset name, Length<51
+testout ! C, Main output file name, Length<21
+ ! I, Number of offspring in the sample
+NA ! I, Number of offspring in the sample
