@@ -35,11 +35,16 @@ ggmap(map_area) +
   ggtitle("four groups")
 
 # for 7 groups (best clustering according to BIC)
+# worth noting that BIC is very similar among the different group #s
 ggmap(map_area) +
   geom_point(grouped_trees, mapping = aes(x=X, y=Y, color=`k7#`)) +
   theme(legend.position="none") +
   scale_color_discrete() +
   ggtitle("seven groups (best according to BIC)")
 
+# because why not.. 15 groups
+ggmap(map_area) +
+  geom_point(grouped_trees, mapping = aes(x=X, y=Y, color=`k15`), size=.7) +
+  ggtitle("...fifteen groups")
 
 

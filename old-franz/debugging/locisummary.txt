@@ -1,6 +1,6 @@
 Software Version            : FRANz 1.2.3
 Dataset                     : TESTTREES
-Time of Data Analysis       : Mon Mar 13 13:07:39 2023
+Time of Data Analysis       : Thu Mar 16 03:35:45 2023
 
 
 *** Locus 1 ***
@@ -43,8 +43,8 @@ Time of Data Analysis       : Mon Mar 13 13:07:39 2023
 Observed Heterozygosity     : 0.9147
 Expected Heterozygosity     : 0.9345
 Hardy-Weinberg Test
-   p-Value                  : 0.0046
-   Standard Error           : 0.0016
+   p-Value                  : 0.0213
+   Standard Error           : 0.0041
 Estimated Null Allele Freq. : 0.0062
 Estimated Genotyping Failure: 0.0657 (47 untyped)
 Polymorphic Inform. Content : 0.9299
@@ -258,8 +258,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.9009
 Expected Heterozygosity     : 0.9177
 Hardy-Weinberg Test
-   p-Value                  : 0.0402
-   Standard Error           : 0.0055
+   p-Value                  : 0.0202
+   Standard Error           : 0.0040
 Estimated Null Allele Freq. : 0.0056
 Estimated Genotyping Failure: 0.0532 (38 untyped)
 Polymorphic Inform. Content : 0.9111
@@ -427,12 +427,10 @@ Sibship exclusion probability
  +--------+--------+------------+------------+------------+--------------------------+
  | Allele |  Count | Heterozyg. |   Homozyg. |  Frequency | Frequency (Null Alleles) |
  +--------+--------+------------+------------+------------+--------------------------+
- |      5 |      1 |          1 |          0 |    0.00076 |                  0.00075 |
- |    122 |      1 |          1 |          0 |    0.00076 |                  0.00075 |
- |    123 |     51 |         39 |          6 |    0.03887 |                  0.03465 |
+ |    123 |     52 |         40 |          6 |    0.03963 |                  0.03542 |
  |    124 |     76 |         60 |          8 |    0.05793 |                  0.05261 |
  |    125 |     40 |         28 |          6 |    0.03049 |                  0.02620 |
- |    126 |    134 |         72 |         31 |    0.10213 |                  0.08482 |
+ |    126 |    134 |         72 |         31 |    0.10213 |                  0.08483 |
  |    127 |     37 |         32 |          2 |    0.02744 |                  0.02584 |
  |    128 |     43 |         39 |          2 |    0.03277 |                  0.03116 |
  |    129 |     55 |         47 |          4 |    0.04192 |                  0.03900 |
@@ -440,10 +438,10 @@ Sibship exclusion probability
  |    131 |     15 |         15 |          0 |    0.01143 |                  0.01132 |
  |    132 |     93 |         63 |         15 |    0.07088 |                  0.06159 |
  |    133 |     32 |         30 |          1 |    0.02439 |                  0.02348 |
- |    134 |     90 |         62 |         14 |    0.06860 |                  0.05984 |
+ |    134 |     90 |         62 |         14 |    0.06860 |                  0.05985 |
  |    135 |      1 |          1 |          0 |    0.00076 |                  0.00075 |
  |    136 |      3 |          3 |          0 |    0.00229 |                  0.00226 |
- |    138 |    207 |        134 |         36 |    0.15701 |                  0.13964 |
+ |    138 |    208 |        135 |         36 |    0.15777 |                  0.14044 |
  |    140 |    112 |         84 |         14 |    0.08537 |                  0.07696 |
  |    142 |    122 |        104 |          9 |    0.09299 |                  0.08740 |
  |    144 |     83 |         63 |         10 |    0.06326 |                  0.05680 |
@@ -465,26 +463,26 @@ Sibship exclusion probability
    TOTAL:     1314          988          162
 
 Observed Heterozygosity     : 0.7530
-Expected Heterozygosity     : 0.9247
+Expected Heterozygosity     : 0.9244
 Hardy-Weinberg Test
    p-Value                  : 0.0000
    Standard Error           : 0.0000
-Estimated Null Allele Freq. : 0.0980
+Estimated Null Allele Freq. : 0.0979
 Estimated Genotyping Failure: 0.0723 (58 untyped)
-Polymorphic Inform. Content : 0.9191
+Polymorphic Inform. Content : 0.9188
 
 Exclusion probability when 1 to 7 fullsibs are genotyped
-  First Parent              : 0.7356228  0.8319143  0.9192603  0.9498524  0.9523264  0.9523866  0.9523871 
-  Second Parent             : 0.8473714  0.9121190  0.9591985  0.9742877  0.9756830  0.9757390  0.9757395 
-  Parent Pair               : 0.9617493  0.9866047  0.9969383  0.9987383  0.9988526  0.9988555  0.9988556 
+  First Parent              : 0.7347238  0.8312288  0.9188166  0.9495046  0.9519889  0.9520496  0.9520501 
+  Second Parent             : 0.8467812  0.9117355  0.9589642  0.9741050  0.9755074  0.9755639  0.9755644 
+  Parent Pair               : 0.9614801  0.9864959  0.9969050  0.9987211  0.9988366  0.9988396  0.9988396 
 
 Probability of identity
-  2 unrelated individuals   : 0.0106660
-  Siblings                  : 0.2906734
+  2 unrelated individuals   : 0.0107451
+  Siblings                  : 0.2908424
 
 Sibship exclusion probability
-  3 unrelated individuals   : 0.8794192
-  4 unrelated individuals   : 0.9906892
+  3 unrelated individuals   : 0.8786353
+  4 unrelated individuals   : 0.9905752
 
 
 *** Locus 10 ***

@@ -1,0 +1,78 @@
+Software Version            : FRANz 1.2.3
+Dataset                     : cluster_2
+Time of Data Analysis       : Thu Mar 16 03:38:49 2023
+
+
+*** Simulation Settings ***
+
+Seed                        : 1678963127
+Simulation Steps            : 50000
+Rate of Typing Error
+  Locus 1                   : 0.010
+  Locus 2                   : 0.010
+  Locus 3                   : 0.010
+  Locus 4                   : 0.010
+  Locus 5                   : 0.010
+  Locus 6                   : 0.010
+  Locus 7                   : 0.010
+  Locus 8                   : 0.010
+  Locus 9                   : 0.010
+  Locus 10                  : 0.010
+Proportion Typed
+  Locus 1                   : 0.954
+  Locus 2                   : 0.840
+  Locus 3                   : 0.911
+  Locus 4                   : 0.937
+  Locus 5                   : 0.928
+  Locus 6                   : 0.949
+  Locus 7                   : 0.916
+  Locus 8                   : 0.886
+  Locus 9                   : 0.907
+  Locus 10                  : 0.852
+
+
+*** Mismatching Loci ***
+
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+
+Histogram Mismatches Parent-Offspring pairs:
+0                           : 93570
+1                           : 6251
+2                           : 177
+3                           : 2
+
+Histogram Mismatches Unrelated pairs:
+0                           : 106
+1                           : 1044
+2                           : 4994
+3                           : 13324
+4                           : 22856
+5                           : 25662
+6                           : 19201
+7                           : 9355
+8                           : 2920
+9                           : 502
+10                          : 36
+
+Histogram Mismatches Offspring-Mother-Father triples:
+0                           : 89352
+1                           : 10125
+2                           : 508
+3                           : 14
+4                           : 1
+
+Histogram Mismatches Offspring-Mother-Unrelated triples:
+0                           : 5
+1                           : 93
+2                           : 737
+3                           : 3386
+4                           : 10246
+5                           : 19380
+6                           : 25749
+7                           : 22794
+8                           : 12889
+9                           : 4136
+10                          : 585
+
+

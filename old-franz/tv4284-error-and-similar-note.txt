@@ -1,0 +1,28 @@
+TV4284 had an error with franz on the 6th loci where the allele 217 wasn't recognized, as it didn't show up elsewhere in the population.
+
+
+Changed it to unknown on franz-trees-debugging.txt
+
+error can be seen running franz-trees-tv4284-error.dat:
+Error: Partially missing genotype of TV4284 at locus 6 with unkown allele (217).
+
+3/16:
+In the debugging file also edited the 122.5 to 123 since I figured that might have the same issue given it was also a unique allele on that loci, but no luck in running.. maybe still are one or two unique alleles that are causing some weird bug?
+
+Okay update after attempting to run the clusters individually: looks like there are individual rows that are causing the errors, probably because of unique values. Ran into that issue with TV4284 again in cluster 1, ran into same situation with (more generic) error message that shows up when attempting to run fRANZ with an unhappy datapoint (vs when you get the specific allele # and all). This error is:
+
+(base) seanbergan@Seans-MacBook-Pro cluster1 % fRANZ --Nmax 269 franz-input-1.dat
+[====================]  100%  Initializing Mersenne Twister                  
+[====================]  100%  Allele Frequency Analysis                      
+[====================]  100%  Simulation                                     
+[====================]  100%  LOD Calculation                                
+zsh: segmentation fault  fRANZ --Nmax 269 franz-input-1.dat
+
+as opposed to:
+
+(base) seanbergan@Seans-MacBook-Pro debugging % fRANZ --Nmax 300 tv4284-error.dat
+Error: Partially missing genotype of TV4284 at locus 6 with unkown allele (217).
+
+BOTH OF THESE GO AWAY AFTER CHANGING LOCI 6 TV4284 from ?/217 to ?/?,
+but not in the case of cluster 2 when changing the unique allele (122.5) to 123,
+maybe there is another problematic unique allele? Is there something else going on here, since this seems super weird...

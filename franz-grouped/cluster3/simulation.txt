@@ -1,0 +1,77 @@
+Software Version            : FRANz 1.2.3
+Dataset                     : cluster_3
+Time of Data Analysis       : Thu Mar 16 03:40:02 2023
+
+
+*** Simulation Settings ***
+
+Seed                        : 1678963201
+Simulation Steps            : 50000
+Rate of Typing Error
+  Locus 1                   : 0.010
+  Locus 2                   : 0.010
+  Locus 3                   : 0.010
+  Locus 4                   : 0.010
+  Locus 5                   : 0.010
+  Locus 6                   : 0.010
+  Locus 7                   : 0.010
+  Locus 8                   : 0.010
+  Locus 9                   : 0.010
+  Locus 10                  : 0.010
+Proportion Typed
+  Locus 1                   : 0.924
+  Locus 2                   : 0.895
+  Locus 3                   : 0.890
+  Locus 4                   : 0.971
+  Locus 5                   : 0.962
+  Locus 6                   : 0.981
+  Locus 7                   : 0.886
+  Locus 8                   : 0.948
+  Locus 9                   : 0.929
+  Locus 10                  : 0.881
+
+
+*** Mismatching Loci ***
+
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+
+Histogram Mismatches Parent-Offspring pairs:
+0                           : 92368
+1                           : 7373
+2                           : 250
+3                           : 9
+
+Histogram Mismatches Unrelated pairs:
+0                           : 10
+1                           : 137
+2                           : 1127
+3                           : 4548
+4                           : 12635
+5                           : 21910
+6                           : 26438
+7                           : 20461
+8                           : 9902
+9                           : 2567
+10                          : 265
+
+Histogram Mismatches Offspring-Mother-Father triples:
+0                           : 87924
+1                           : 11421
+2                           : 631
+3                           : 24
+
+Histogram Mismatches Offspring-Mother-Unrelated triples:
+0                           : 1
+1                           : 11
+2                           : 115
+3                           : 762
+4                           : 3396
+5                           : 10404
+6                           : 20893
+7                           : 28122
+8                           : 23227
+9                           : 10996
+10                          : 2073
+
+
