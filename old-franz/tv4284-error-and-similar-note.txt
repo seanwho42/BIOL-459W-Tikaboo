@@ -26,3 +26,14 @@ Error: Partially missing genotype of TV4284 at locus 6 with unkown allele (217).
 BOTH OF THESE GO AWAY AFTER CHANGING LOCI 6 TV4284 from ?/217 to ?/?,
 but not in the case of cluster 2 when changing the unique allele (122.5) to 123,
 maybe there is another problematic unique allele? Is there something else going on here, since this seems super weird...
+
+
+
+okay some more interesting stuff:
+even though it errors out without any progress bar, a few files are still generated.. nothing new there (allelefreqs.dat, locisummary,txt, simulation.txt). BUT, looking at allele frequencies in locisummary.dat, there are SEVERAL alleles in cluster 2 which only show up once, which seemed to be the only unique characteristic that might have been causing issues with TV4284 loci 6 allele 217..
+
+It is worth noting that there are also several unique alleles in the cluster1 summary even now that it's running okay. Is it only confused by alleles that don't make sense within the context of some inferred repeat interpretation? so like if it was ATATATAT = 8, 10 and 12 would make sense, but 11 would confuse the program and throw an error?
+
+
+
+
