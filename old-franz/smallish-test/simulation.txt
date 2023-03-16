@@ -1,0 +1,77 @@
+Software Version            : FRANz 1.2.3
+Dataset                     : TESTTREES
+Time of Data Analysis       : Fri Mar 10 14:42:58 2023
+
+
+*** Simulation Settings ***
+
+Seed                        : 1678488176
+Simulation Steps            : 50000
+Rate of Typing Error
+  Locus 1                   : 0.010
+  Locus 2                   : 0.010
+  Locus 3                   : 0.010
+  Locus 4                   : 0.010
+  Locus 5                   : 0.010
+  Locus 6                   : 0.010
+  Locus 7                   : 0.010
+  Locus 8                   : 0.010
+  Locus 9                   : 0.010
+  Locus 10                  : 0.010
+Proportion Typed
+  Locus 1                   : 0.953
+  Locus 2                   : 0.794
+  Locus 3                   : 0.882
+  Locus 4                   : 0.924
+  Locus 5                   : 0.906
+  Locus 6                   : 0.935
+  Locus 7                   : 0.888
+  Locus 8                   : 0.882
+  Locus 9                   : 0.912
+  Locus 10                  : 0.835
+
+
+*** Mismatching Loci ***
+
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+
+Histogram Mismatches Parent-Offspring pairs:
+0                           : 93766
+1                           : 6039
+2                           : 192
+3                           : 3
+
+Histogram Mismatches Unrelated pairs:
+0                           : 97
+1                           : 1006
+2                           : 4703
+3                           : 12771
+4                           : 22224
+5                           : 25618
+6                           : 19796
+7                           : 9950
+8                           : 3178
+9                           : 607
+10                          : 50
+
+Histogram Mismatches Offspring-Mother-Father triples:
+0                           : 89632
+1                           : 9832
+2                           : 527
+3                           : 9
+
+Histogram Mismatches Offspring-Mother-Unrelated triples:
+0                           : 1
+1                           : 93
+2                           : 682
+3                           : 3355
+4                           : 10074
+5                           : 19720
+6                           : 26009
+7                           : 22577
+8                           : 12847
+9                           : 4086
+10                          : 556
+
+

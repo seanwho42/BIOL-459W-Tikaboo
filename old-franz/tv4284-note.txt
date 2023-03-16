@@ -1,0 +1,7 @@
+TV4284 had an error with franz on the 6th loci where the allele 217 wasn't recognized, as it didn't show up elsewhere in the population.
+
+
+Changed it to unknown on franz-trees-debugging.txt
+
+error can be seen running franz-trees-tv4284-error.dat:
+Error: Partially missing genotype of TV4284 at locus 6 with unkown allele (217).

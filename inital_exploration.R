@@ -18,7 +18,9 @@ skim(coords)
 coords <- coords %>% mutate(Lat = as.numeric(Lat))
 
 # need to make the coordinates into decimal form instead of minutes
-coords <- coords %>% mutate(Y = (Lat + `Lat '`/60), X = -(Long + `Long '`/60))
+coords <- coords %>%
+  mutate(Y = (Lat + `Lat '`/60), X = -(Long + `Long '`/60)) %>%
+  unique()
 head(coords$Y)
 head(coords$X)
 
@@ -31,6 +33,11 @@ genotypes <- genotypes %>%
 
 geno_coords <- inner_join(genotypes, coords, by = c("Tree" = "Tree"))
 dim(geno_coords)
+
+# 3 duplicates.. might have been left over from not joining after fixing other
+# duplicate entries
+geno_coords <- unique(geno_coords)
+
 
 # creating a map
 ?get_stamenmap

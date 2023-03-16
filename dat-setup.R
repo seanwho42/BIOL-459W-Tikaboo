@@ -18,7 +18,7 @@ offspring <- genotypes %>%
   select(-`Sample id`)
   
   
-offspring %>%  mutate_all(str_replace(pattern="\'?", replacement='0'))
+# didnt work: offspring %>%  mutate_all(str_replace(pattern="\'?", replacement='0'))
 
 ?str_replace
 

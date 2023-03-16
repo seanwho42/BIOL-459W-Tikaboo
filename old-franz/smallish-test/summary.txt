@@ -1,0 +1,126 @@
+Software Version            : FRANz 1.2.3
+Dataset                     : TESTTREES
+Time of Data Analysis       : Fri Mar 10 14:42:58 2023
+
+
+*** Summary Statistics ***
+
+Locus       Alleles    Min    Max      N   Hobs   Hexp    PIC  EX 1P  EX 2P  EX PP     ID  IDsib  P_NULL  HWE PV  HWE SE
+1                24    137    187     162  0.914  0.922  0.914  0.722  0.838  0.957  0.012  0.293  0.0000  0.7813  0.0116
+2                17    173    211     135  0.733  0.881  0.868  0.614  0.762  0.917  0.025  0.317  0.0906  0.0000  0.0000
+3                18     91    125     150  0.553  0.802  0.782  0.463  0.640  0.835  0.058  0.365  0.1876  0.0000  0.0000
+4                22    130    176     157  0.892  0.878  0.864  0.607  0.756  0.912  0.027  0.319  0.0000  0.2902  0.0130
+5                19    208    246     154  0.890  0.908  0.898  0.681  0.810  0.943  0.017  0.302  0.0027  0.2451  0.0117
+6                 6    101    125     159  0.572  0.675  0.623  0.257  0.426  0.607  0.158  0.453  0.0801  0.0052  0.0008
+7                20    169    213     151  0.669  0.698  0.679  0.329  0.521  0.745  0.107  0.430  0.0301  0.1730  0.0112
+8                15    149    177     150  0.833  0.839  0.817  0.510  0.678  0.853  0.047  0.343  0.0175  0.0296  0.0043
+9                21      5    186     155  0.529  0.852  0.836  0.552  0.713  0.885  0.036  0.334  0.2335  0.0000  0.0000
+10               26    150    201     142  0.866  0.927  0.918  0.732  0.845  0.960  0.011  0.291  0.0301  0.0052  0.0019
+
+Number of sampling locations: 1
+Number of individuals       : 170
+Number of loci              : 10
+
+Average number of alleles   :  18.800 (+- 5.554)
+Average observed heterozyg. :   0.745 (+- 0.154)
+Average expected heterozyg. :   0.838 (+- 0.089)
+Average PIC                 :   0.820 (+- 0.099)
+
+Cumulative exclusion probability when 1 to 7 fullsibs are genotyped
+  First Parent              : 0.9997883  0.9999904  0.9999999  1.0000000  1.0000000  1.0000000  1.0000000 
+  Second Parent             : 0.9999975  1.0000000  1.0000000  1.0000000  1.0000000  1.0000000  1.0000000 
+  Parent Pair               : 1.0000000  1.0000000  1.0000000  1.0000000  1.0000000  1.0000000  1.0000000 
+
+Cumulative probability of identity
+  2 unrelated individuals   : 0.0000000
+  Siblings                  : 0.0000212
+
+Cumulative sibship exclusion probability
+  3 unrelated individuals   : 0.9999963
+  4 unrelated individuals   : 1.0000000
+
+
+*** Files ***
+
+Input
+  Genotype                  : franz-trees-smallish.dat
+  Allele frequency file     : none (calculates frequencies)
+  Geodist file              : none
+  Coordinate file           : none
+  Pedigree file             : none
+
+Output
+  Summary                   : summary.txt
+  Loci summary file         : locisummary.txt
+  Allele frequency file     : allelefreqs.dat
+  Simulation results        : simulation.txt
+  Mismatches                : mismatches.txt
+  Parentage file            : parentage.csv
+  Siblings file             : siblings.txt
+  Pedigree outfile FRANz    : pedigree.dat
+  Pedigree outfile dot      : pedigree.dot
+  MCMC logfile              : mcmc.log
+  Detailed HWE test results : none (specify --hwetestout)
+  Missing Data statistics   : none (specify --missingout)
+
+
+*** Parentage Settings ***
+
+Femrepro                    : 0:1000
+Malerepro                   : 0:1000
+Selfing                     : No
+Use distances               : No
+Number Loci                 : use all.
+Minimum typed loci          : 6
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+Rate of typing error
+  Average                   : 0.010
+  Locus 1                   : 0.010
+  Locus 2                   : 0.010
+  Locus 3                   : 0.010
+  Locus 4                   : 0.010
+  Locus 5                   : 0.010
+  Locus 6                   : 0.010
+  Locus 7                   : 0.010
+  Locus 8                   : 0.010
+  Locus 9                   : 0.010
+  Locus 10                  : 0.010
+Update Allele frequencies   : No
+Detect fullsibs             : No
+  in parental generation    : No
+p-Value Threshold           : 1.000E-03, 1.000E-03, 5.000E-02
+p-Value Correction Method   : Benjamini-Hochberg
+
+
+*** Identical genotypes ***
+
+TV2269      TV2270    
+TV2300      TV2301    
+
+
+*** Simulation Results ***
+
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+
+
+*** Maximum Likelihood Pedigree ***
+
+Likelihood                  : -89.122
+Number of Individuals
+  Generation   -3           :   150
+  Generation   -2           :    15
+  Generation   -1           :     3
+  Generation    0           :     2
+
+
+*** MCMC ***
+
+Observed Pedigrees in MH    : 286929
+Acceptance Ratio in MH      : 0.317
+Allele Freq. updates in MH  : 0
+Estimated Sampling Rate Fem.: 0.297 (+- 0.073)
+Estimated Sampling Rate Male: 0.297 (+- 0.073)
+Swap Attempts in MCMCMC     : 0
+Accepted Swaps in MCMCMC    : 0
