@@ -1,0 +1,8 @@
+Error: Partially missing genotype of TV5087 at locus 6 with unkown allele (213).
+-- changing that one allele to a ? didn't fix it, but removing that sample from the calculation did..
+
+Removing this helped with 2b-searching file, getting rid of segmentation fault, but it never gave any specific errors point to this one:
+    TV5188 1 ? ? ? 171/171 189/189 91/99 140/150 214/230 105/121 175/175 165/169 123/140 176/?
+
+
+Removed both of these from cluster 2 and fRANZ successfully ran!

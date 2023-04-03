@@ -26,6 +26,8 @@ Error: Partially missing genotype of TV4284 at locus 6 with unkown allele (217).
 BOTH OF THESE GO AWAY AFTER CHANGING LOCI 6 TV4284 from ?/217 to ?/?,
 but not in the case of cluster 2 when changing the unique allele (122.5) to 123,
 maybe there is another problematic unique allele? Is there something else going on here, since this seems super weird...
+** WORTH NOTING -- I SAY ALLELE 6 BECAUSE THAT IS THE INDEX THAT FRANZ ASSIGNS IT (starting from index of 0, I think).. this is really yb13 **
+
 
 
 
