@@ -1,6 +1,6 @@
 Software Version            : FRANz 1.2.3
 Dataset                     : cluster_2
-Time of Data Analysis       : Mon Apr  3 10:48:44 2023
+Time of Data Analysis       : Wed Apr  5 13:48:47 2023
 
 
 *** Locus 1 ***
@@ -40,8 +40,8 @@ Time of Data Analysis       : Mon Apr  3 10:48:44 2023
 Observed Heterozygosity     : 0.9330
 Expected Heterozygosity     : 0.9226
 Hardy-Weinberg Test
-   p-Value                  : 0.7241
-   Standard Error           : 0.0127
+   p-Value                  : 0.6414
+   Standard Error           : 0.0136
 Estimated Null Allele Freq. : 0.0000
 Estimated Genotyping Failure: 0.0427 (10 untyped)
 Polymorphic Inform. Content : 0.9154
@@ -189,8 +189,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.8182
 Expected Heterozygosity     : 0.8650
 Hardy-Weinberg Test
-   p-Value                  : 0.4116
-   Standard Error           : 0.0140
+   p-Value                  : 0.4441
+   Standard Error           : 0.0143
 Estimated Null Allele Freq. : 0.0123
 Estimated Genotyping Failure: 0.0597 (14 untyped)
 Polymorphic Inform. Content : 0.8497
@@ -241,8 +241,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.8716
 Expected Heterozygosity     : 0.8861
 Hardy-Weinberg Test
-   p-Value                  : 0.1216
-   Standard Error           : 0.0091
+   p-Value                  : 0.2400
+   Standard Error           : 0.0118
 Estimated Null Allele Freq. : 0.0113
 Estimated Genotyping Failure: 0.0722 (17 untyped)
 Polymorphic Inform. Content : 0.8748
@@ -278,8 +278,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.6996
 Expected Heterozygosity     : 0.7089
 Hardy-Weinberg Test
-   p-Value                  : 0.0012
-   Standard Error           : 0.0004
+   p-Value                  : 0.0007
+   Standard Error           : 0.0003
 Estimated Null Allele Freq. : 0.0143
 Estimated Genotyping Failure: 0.0509 (12 untyped)
 Polymorphic Inform. Content : 0.6560
@@ -329,8 +329,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.5833
 Expected Heterozygosity     : 0.6032
 Hardy-Weinberg Test
-   p-Value                  : 0.3770
-   Standard Error           : 0.0144
+   p-Value                  : 0.1638
+   Standard Error           : 0.0112
 Estimated Null Allele Freq. : 0.0303
 Estimated Genotyping Failure: 0.0559 (13 untyped)
 Polymorphic Inform. Content : 0.5913
@@ -374,8 +374,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.8077
 Expected Heterozygosity     : 0.8171
 Hardy-Weinberg Test
-   p-Value                  : 0.2694
-   Standard Error           : 0.0115
+   p-Value                  : 0.3399
+   Standard Error           : 0.0125
 Estimated Null Allele Freq. : 0.0105
 Estimated Genotyping Failure: 0.1033 (24 untyped)
 Polymorphic Inform. Content : 0.7910
@@ -486,8 +486,8 @@ Sibship exclusion probability
 Observed Heterozygosity     : 0.9005
 Expected Heterozygosity     : 0.9235
 Hardy-Weinberg Test
-   p-Value                  : 0.0001
-   Standard Error           : 0.0001
+   p-Value                  : 0.0113
+   Standard Error           : 0.0031
 Estimated Null Allele Freq. : 0.0145
 Estimated Genotyping Failure: 0.1297 (30 untyped)
 Polymorphic Inform. Content : 0.9158
