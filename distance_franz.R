@@ -2,7 +2,10 @@ library(tidyverse)
 library(ggmap)
 library(geosphere)
 
-cloneless_franz <- read_csv("franz-grouped/all-clusters/cloneless/parentage.csv")
+cloneless_franz <- read_csv("franz-grouped/all-clusters/cloneless/with_selfing/different-nmax/parentage.csv")
+?read_delim
+
+
 
 names(cloneless_franz)
 # this is from franz run that had clones removed
@@ -16,8 +19,8 @@ filtered_franz <- cloneless_franz %>%
 
 time_travellers <- inner_join(filtered_franz, filtered_franz, by = c("Tree" = "parent_id",
                                                                      "parent_id" = "Tree"),
-                              keep = T) %>%
-  select(Tree.x, parent_id.x, Tree.y, parent_id.y)
+                              keep = F) %>%
+  select(Tree, parent_id)
 
 time_travellers %>% print(n=50)
 
@@ -91,6 +94,7 @@ head(franz_distances)
 
 
 distances_m = tibble(offspring_id = "some_id", parent_id = "other_id", distance = 0)
+distances_m
 for (i in 1:(nrow(franz_distances)) ){
   distances_m <- distances_m %>% add_row(
     offspring_id = franz_distances$Tree[i],
@@ -104,6 +108,7 @@ for (i in 1:(nrow(franz_distances)) ){
               #as.numeric(unlist(strsplit(franz_distances$parent_coord_vector[i], " ", fixed=T))))))
 }
 
+distances_m
 
 distm(as.numeric(unlist(strsplit(franz_distances$offspring_coord_vector[3], " ", fixed=T))),
       as.numeric(unlist(strsplit(franz_distances$parent_coord_vector[3], " ", fixed=T))))
@@ -124,26 +129,110 @@ trees_distances <- inner_join(distances_m, franz_coords, by = c("offspring_id"="
 
 
 trees_distances %>% group_by(tt) %>%
-  summarize(mean_d = mean(distance),
-            sd_d = sd(distance))
+  summarize(median_d = median(distance),
+            mean_d = mean(distance),
+            sd_d = sd(distance),
+            max_d = max(distance),
+            min_d = min(distance),
+            n = n())
 
 
-
-trees_distances %>% ggplot(aes(x = distance,y=after_stat(density))) +
-  geom_histogram(fill="thistle2") +
+# comparative histogram of timetravellers and non where true = tt
+trees_distances %>%
+  # filter(distance < 1000) %>%
+  ggplot(aes(x = distance,y=after_stat(density))) +
+  geom_histogram(fill="thistle2", bins=50) +
   facet_grid(.~tt) +
+  geom_density(color = "red") +
   theme_classic()
 
-t.test(x = trees_distances %>% filter(tt) %>% select(distance),
-       y = trees_distances %>% filter(is.na(tt)) %>% select(distance)
+
+t.test(
+  x = trees_distances %>% filter(tt) %>% select(distance),
+  y = trees_distances %>% filter(is.na(tt)) %>% select(distance)
 )
 # t = -1.2068, df = 103.07, p-value = 0.2303
 
+# feasible_distances = as.vector(trees_distances %>% filter(is.na(tt)) %>% select(distance))
+# feasible_distances
+#mean(feasible_distances)
+
+# finding z score of 2006 article distance in relation to this data
+# z = (x-mean)/sd
+# for some reason it's not liking mean(feasible_distances) so I just used the
+# values from the summarize earlier instead
+# (30 - 960.3587)/2225
+# -0.4181387
+# note that the data doesn't seem normally distributed, so don't think a z test
+# makes a lot of sense
+
+mean(feasible_distances)
+t.test(x=trees_distances %>% filter(is.na(tt)) %>% select(distance), mu=30.0)
 
 
 
+# looking into wilcox test? not working though
+# this is for old data made so be cautious of hard coded numbers
+trees_distances %>%
+  filter(distance > 232 & is.na(tt)) %>%
+  summarize(above = n(),
+            below = 164-above)
 
 
+wilcox.test(x=(trees_distances %>% filter(is.na(tt)) %>% select(distance)), mu=30)
+
+as.vector(trees_distances %>% filter(is.na(tt)) %>% select(distance))
+
+?wilcox.test
+
+
+# visualizations for results page
+
+
+trees_distances %>% filter(is.na(tt)) %>% select(distance) %>%
+  ggplot(aes(x=distance)) +
+  geom_boxplot() +
+  theme_classic()
+
+
+
+trees_distances %>%
+  filter(is.na(tt)) %>%
+  ggplot(aes(x = distance,y=after_stat(density))) +
+  geom_histogram(fill="thistle2", bins=40) +
+  geom_density(color = "red") +
+  theme_classic() +
+  labs(x="Distance (m)", y = "Density", title = "Distribution of Joshua tree parent-offspring pair distance")
+
+trees_distances %>% group_by(tt) %>%
+  summarize(median_d = median(distance),
+            mean_d = mean(distance),
+            sd_d = sd(distance),
+            max_d = max(distance),
+            min_d = min(distance),
+            n = n(),
+            p95 = quantile(distance, 0.95)) %>%
+  write_csv('summary_tt_table.csv')
+
+trees_distances %>% filter(is.na(tt)) %>%
+  filter(distance > quantile(distance, 0.95))
+
+
+
+# map cleaned up slightly
+ggmap(franz_map_area) +
+  # geom_point(geno_coords, mapping=aes(X, Y), size = 0.5) +
+  geom_segment(franz_coords %>% filter(is.na(tt)),
+               mapping=aes(x=parent_x, y=parent_y, xend=offspring_x, yend=offspring_y),
+               arrow = arrow(
+                 length = unit(0.007, "npc"),
+                 type = "closed",
+                 angle = 20),
+               size=0.2) +
+  labs(title="Parental-offspring pairs of Joshua trees in Tikaboo Valley")
+# arrows go from parent to offspring
+
+?quantile
 
 
 

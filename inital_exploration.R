@@ -50,7 +50,10 @@ map_area <- get_stamenmap(bbox=c(left = min(geno_coords$X - 0.005),
 
 ggmap(map_area) +
   theme_classic() +
-  geom_point(geno_coords,mapping=aes(x=X,y=Y), size= 0.01)
+  geom_point(geno_coords,mapping=aes(x=X,y=Y), size= 0.01) +
+  labs(title='Y. brevifolia sample distribution in Tikaboo Valley, NV')
+  
+  
 
 
 skim(genotypes)

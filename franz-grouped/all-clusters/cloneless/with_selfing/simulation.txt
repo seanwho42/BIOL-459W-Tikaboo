@@ -1,0 +1,79 @@
+Software Version            : FRANz 1.2.3
+Dataset                     : cloneless
+Time of Data Analysis       : Wed Apr 12 15:45:11 2023
+
+
+*** Simulation Settings ***
+
+Seed                        : 1681339509
+Simulation Steps            : 50000
+Selfing Rate                : 0.191
+Rate of Typing Error
+  Locus 1                   : 0.010
+  Locus 2                   : 0.010
+  Locus 3                   : 0.010
+  Locus 4                   : 0.010
+  Locus 5                   : 0.010
+  Locus 6                   : 0.010
+  Locus 7                   : 0.010
+  Locus 8                   : 0.010
+  Locus 9                   : 0.010
+  Locus 10                  : 0.010
+Proportion Typed
+  Locus 1                   : 0.937
+  Locus 2                   : 0.878
+  Locus 3                   : 0.904
+  Locus 4                   : 0.953
+  Locus 5                   : 0.948
+  Locus 6                   : 0.966
+  Locus 7                   : 0.891
+  Locus 8                   : 0.915
+  Locus 9                   : 0.918
+  Locus 10                  : 0.864
+
+
+*** Mismatching Loci ***
+
+Max. mismatching loci Dyad  : 2
+Max. mismatching loci Triple: 3
+
+Histogram Mismatches Parent-Offspring pairs:
+0                           : 93119
+1                           : 6646
+2                           : 231
+3                           : 4
+
+Histogram Mismatches Unrelated pairs:
+0                           : 4
+1                           : 166
+2                           : 1084
+3                           : 4556
+4                           : 12007
+5                           : 21255
+6                           : 25856
+7                           : 20742
+8                           : 10729
+9                           : 3197
+10                          : 404
+
+Histogram Mismatches Offspring-Mother-Father triples:
+0                           : 87640
+1                           : 11610
+2                           : 730
+3                           : 19
+4                           : 1
+
+Histogram Mismatches Offspring-Mother-Unrelated triples:
+0                           : 1
+1                           : 18
+2                           : 183
+3                           : 1156
+4                           : 4282
+5                           : 12013
+6                           : 22171
+7                           : 27150
+8                           : 21390
+9                           : 9731
+10                          : 1905
+
+
